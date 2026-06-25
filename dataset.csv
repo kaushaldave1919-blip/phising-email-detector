@@ -1,0 +1,51 @@
+email,label
+"Dear customer, your account has been suspended. Please click here to verify your login password immediately.",phishing
+"Urgent security alert: update account information now to avoid bank account suspension.",phishing
+"Your payment failed. Login to http://192.168.1.44/update and verify your password.",phishing
+"Congratulations, click here to claim your reward by entering bank login details.",phishing
+"We detected unusual activity. Verify your account password using the link below.",phishing
+"Important notice: your online banking access will expire unless you update account details today.",phishing
+"Security alert from support. Click here and confirm your payment information.",phishing
+"Your account suspended message requires urgent action. Login now to restore access.",phishing
+"Bank verification required. Please provide password and personal information to continue.",phishing
+"Urgent payment confirmation needed. Visit http://203.0.113.42/secure-login now.",phishing
+"Final warning: update account profile or your mailbox will be disabled.",phishing
+"Your invoice payment is overdue. Click here to verify billing details.",phishing
+"Unusual login attempt blocked. Verify password at http://security-check.example-login.com.",phishing
+"Account suspended due to missing bank verification. Update account immediately.",phishing
+"Security alert: your password expires today. Login to confirm your identity.",phishing
+"Please verify your payment method using this link to prevent service interruption.",phishing
+"Urgent request from IT: click here to reset your email password.",phishing
+"Your bank account received a security alert. Login and update account settings.",phishing
+"We placed a hold on your account. Verify details and restore access now.",phishing
+"Payment portal requires immediate password confirmation to complete processing.",phishing
+"Your mailbox storage is full. Login to http://198.51.100.23/mail-update to keep access.",phishing
+"Action required: account suspended until you verify your identity and password.",phishing
+"Click here to unlock your secure document and update account records.",phishing
+"Bank payment alert: urgent login required to reverse the transaction.",phishing
+"Your cloud account has been locked. Verify password and billing information.",phishing
+"Team, tomorrow's project meeting has moved to 11 AM in conference room B.",safe
+"Hi Alex, I attached the quarterly report draft for your review before Friday.",safe
+"Your package was delivered to the front desk at 2 PM today.",safe
+"Reminder: the company wellness session starts at 3 PM in the training room.",safe
+"Thanks for your help on the client presentation. The final slides look good.",safe
+"The engineering standup notes are available in the shared workspace.",safe
+"Lunch orders for the workshop will close at noon. Please reply with dietary preferences.",safe
+"Your calendar invitation for the design review has been updated to include Sam.",safe
+"The printer maintenance window is scheduled for Saturday morning.",safe
+"Here is the agenda for our weekly planning call and the action items from last week.",safe
+"Payroll has confirmed that employee tax forms are available in the HR portal.",safe
+"The office will be closed Monday for the public holiday.",safe
+"Please find the meeting minutes and follow-up owners from today's discussion.",safe
+"Your travel itinerary for the Chicago conference is attached.",safe
+"The support ticket has been resolved and no further action is required.",safe
+"The team dinner reservation is confirmed for 7 PM on Thursday.",safe
+"Monthly newsletter: product updates, community events, and upcoming webinars.",safe
+"The contract review has been completed by legal and is ready for signature.",safe
+"Please review the attached budget spreadsheet before our finance meeting.",safe
+"Your password was changed successfully by your request from the company portal.",safe
+"Reminder to submit timesheets by Friday afternoon.",safe
+"A new comment was added to the design document you are following.",safe
+"The onboarding checklist for new hires has been updated.",safe
+"Facilities will test the fire alarm system at 10 AM tomorrow.",safe
+"Thank you for attending the training session. Course materials are attached.",safe

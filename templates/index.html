@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Email Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="app-shell">
+        <header class="topbar">
+            <div class="brand">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <div>
+                    <h1>Phishing Email Detection System</h1>
+                    <p>Cybersecurity triage dashboard</p>
+                </div>
+            </div>
+            <div class="system-status">
+                <span class="status-dot"></span>
+                <span>Model Ready</span>
+            </div>
+        </header>
+
+        <main class="dashboard">
+            <section class="panel scanner-panel">
+                <div class="panel-header">
+                    <div>
+                        <p class="eyebrow">Email Scanner</p>
+                        <h2>Analyze Message Content</h2>
+                    </div>
+                    <span class="panel-badge">TF-IDF + Naive Bayes</span>
+                </div>
+
+                <form id="scanForm" class="scan-form">
+                    <label for="emailContent">Email content</label>
+                    <textarea id="emailContent" name="email_content" rows="14" placeholder="Paste raw email content here..."></textarea>
+
+                    <div class="form-actions">
+                        <button type="submit" id="scanButton" class="scan-button">
+                            <span class="button-loader" aria-hidden="true"></span>
+                            <span class="button-text">Scan Email</span>
+                        </button>
+                        <button type="button" id="clearButton" class="secondary-button">Clear</button>
+                    </div>
+
+                    <div id="loadingPanel" class="loading-panel" hidden>
+                        <span class="scan-orbit"></span>
+                        <span>Scanning indicators</span>
+                    </div>
+
+                    <div id="errorBox" class="error-box" role="alert" hidden></div>
+                </form>
+            </section>
+
+            <aside class="panel statistics-panel">
+                <div class="panel-header compact">
+                    <div>
+                        <p class="eyebrow">Message Metrics</p>
+                        <h2>Email Statistics</h2>
+                    </div>
+                </div>
+
+                <dl class="stats-list">
+                    <div>
+                        <dt>Characters</dt>
+                        <dd id="charCount">0</dd>
+                    </div>
+                    <div>
+                        <dt>Words</dt>
+                        <dd id="wordCount">0</dd>
+                    </div>
+                    <div>
+                        <dt>Lines</dt>
+                        <dd id="lineCount">0</dd>
+                    </div>
+                    <div>
+                        <dt>URLs</dt>
+                        <dd id="urlCount">0</dd>
+                    </div>
+                </dl>
+            </aside>
+
+            <section id="resultsSection" class="results-section" hidden>
+                <div class="result-card verdict-card">
+                    <p class="card-label">Prediction</p>
+                    <h3 id="predictionValue">Safe</h3>
+                    <span id="modelValue" class="microcopy">Model: Safe</span>
+                </div>
+
+                <div class="result-card score-card">
+                    <p class="card-label">Risk Score</p>
+                    <div id="scoreRing" class="score-ring" style="--score: 0;">
+                        <span id="riskScoreValue">0%</span>
+                    </div>
+                </div>
+
+                <div class="result-card level-card">
+                    <p class="card-label">Risk Level</p>
+                    <h3 id="riskLevelValue">Low</h3>
+                    <span id="confidenceValue" class="microcopy">Confidence: 0%</span>
+                </div>
+
+                <div class="result-card report-card">
+                    <p class="card-label">Report</p>
+                    <a id="reportLink" class="report-link" href="#" download>Download PDF</a>
+                </div>
+            </section>
+
+            <section id="indicatorsSection" class="indicator-grid" hidden>
+                <div class="indicator-panel">
+                    <div class="panel-header compact">
+                        <div>
+                            <p class="eyebrow">Text Indicators</p>
+                            <h2>Suspicious Keywords Found</h2>
+                        </div>
+                    </div>
+                    <ul id="keywordsList" class="pill-list"></ul>
+                </div>
+
+                <div class="indicator-panel">
+                    <div class="panel-header compact">
+                        <div>
+                            <p class="eyebrow">Link Indicators</p>
+                            <h2>URLs Found</h2>
+                        </div>
+                    </div>
+                    <ul id="urlsList" class="url-list"></ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
